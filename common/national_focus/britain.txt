@@ -1,0 +1,62 @@
+focus_tree = {
+    id = britain
+    country = {
+        factor = 0
+        modifier = {
+            add = 25
+            tag = ENG
+        }
+    }
+    default = no
+    continuous_focus_position = {
+        x = 5000
+        y = 5000
+    }
+    focus = {
+        id = ENG_tread_with_baldwin
+        icon = GFX_focus_ENG_tread_with_baldwin
+        cost = 5
+        x = 4
+        y = 0
+        available = {}
+        bypass = {}
+        search_filters = { }
+        completion_reward = {
+            
+        }
+    }
+    focus = {
+        id = ENG_continue_foreign_interests
+        icon = GFX_goal_global_power
+        cost = 10
+        x = -2
+        y = 1
+        available = {}
+        bypass = {}
+        prerequisite = {
+            focus = ENG_tread_with_baldwin
+        }
+        relative_position_id = ENG_tread_with_baldwin
+        search_filters = { }
+        completion_reward = {
+            
+        }
+    }
+    focus = {
+        id = ENG_appeasement
+        icon = GFX_goal_anschluss
+        cost = 10
+        x = 0
+        y = 1
+        available = {}
+        bypass = {}
+        prerequisite = {
+            focus = ENG_continue_foreign_interests
+        }
+        relative_position_id = ENG_continue_foreign_interests
+        search_filters = { }
+        completion_reward = {
+            
+        }
+    }
+}
